@@ -298,7 +298,7 @@ public class PrimeFactorsTest {
     @Test
     public void checkCalculateFactorsRecursivelyAndIterativelyNumber2PowerOf32() {
         PrimeFactors pf = new PrimeFactors();
-
+        // Hello!
         Long startTime = System.currentTimeMillis();
         pf.calculateFactorsIteratively((int)(Math.pow(2, 30)));
         Long timeTaken = System.currentTimeMillis() - startTime;
