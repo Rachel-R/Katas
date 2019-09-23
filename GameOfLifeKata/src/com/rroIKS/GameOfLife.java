@@ -54,19 +54,6 @@ public class GameOfLife {
         return neighbors;
     }
 
-    public void displayCalculationMatrix() {
-        // Board including edges
-        for (int i = 0; i < calculationMatrix.length; i++) {
-            System.out.println("\n");
-            for (int j = 0; j < calculationMatrix[i].length; j++) {
-                System.out.print(boolToInt(calculationMatrix[i][j]) + "    ");
-            }
-        }
-    }
-
-    private int boolToInt(boolean b) {
-        return b ? 1 : 0;
-    }
 
     public boolean[][] getGameBoard() {
         boolean[][] gameBoard = new boolean[calculationMatrix.length-2][calculationMatrix[0].length -2];
